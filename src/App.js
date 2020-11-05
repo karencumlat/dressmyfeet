@@ -66,6 +66,10 @@ function App() {
           className="sneakers-feature--dress-my-feet"
         />
         <h2 className="sneakers-feature--name">{sneakersName}</h2>
+        <h2 className="sneakers-default-font credit">
+          Dress My Feet <br /> a{" "}
+          <a href="https://karencumlat.ca">Karen Cumlat</a> project
+        </h2>
       </section>
 
       <nav className="sneakers-gallery">
@@ -83,7 +87,7 @@ function App() {
                     alt={sneaks.name}
                     className="sneakers-card--image"
                   />
-                  <h2 className="sneakers-card--name">{sneaks.name}</h2>
+                  <h2 className="sneakers-default-font">{sneaks.name}</h2>
                 </button>
               </div>
             );
