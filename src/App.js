@@ -11,7 +11,7 @@ function App() {
   const [sneakersName, setSneakerName] = React.useState("");
 
   React.useEffect(() => {
-    const dressFeetUrl = `./images/${sneakers[dressShoes].tag}.svg`;
+    const dressFeetUrl = `/images/${sneakers[dressShoes].tag}.svg`;
     setDressFeet(process.env.PUBLIC_URL + dressFeetUrl);
     setSneakerName(sneakers[dressShoes].name);
   }, [dressShoes]);
@@ -48,7 +48,7 @@ function App() {
             <FontAwesomeIcon icon="chevron-left" size="4x" />
           </button>
           <img
-            src={process.env.PUBLIC_URL + "./images/leg.svg"}
+            src={process.env.PUBLIC_URL + "/images/leg.svg"}
             alt="Leg with sock"
             className="sneakers-feature--leg"
           />
@@ -71,7 +71,7 @@ function App() {
       <nav className="sneakers-gallery">
         <div className="sneakers-gallery--card-group">
           {sneakers.map((sneaks) => {
-            const imgUrl = `./images/${sneaks.tag}.svg`;
+            const imgUrl = `/images/${sneaks.tag}.svg`;
             return (
               <div className="sneakers-card" key={sneaks.tag}>
                 <button
