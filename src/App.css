@@ -1,38 +1,92 @@
-.App {
+* {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #262521;
   text-align: center;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.primary-btn {
+  appearance: none;
+  background: none;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sneakers-feature {
+  width: 500px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ff3333;
+  padding: 0 2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sneakers-feature--base {
   display: flex;
-  flex-direction: column;
+}
+
+.sneakers-feature--leg {
+  height: 350px;
+  padding: 0 13em 0 2.5em;
+}
+
+.sneakers-feature--dress-my-feet {
+  width: 20em;
+  height: auto;
+  margin: -3em 0 0 0;
+}
+
+.sneakers-feature--name {
+  color: #fff;
+}
+
+.sneakers-feature--btn {
+  margin: 30% 0 0 0;
+  width: auto;
+  height: 5em;
+  outline: none;
+}
+
+.sneakers-gallery {
+  width: calc(100vw - 500px);
+  left: 500px;
+  position: relative;
+}
+
+.sneakers-gallery--card-group {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sneakers-card {
+  padding: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sneakers-card--image {
+  width: 200px;
+  height: auto;
+}
+
+.sneakers-card--button {
+  background: none;
+  border: none;
+  color: #262521;
+  padding: 1em;
+}
+
+.sneakers-card--button:hover {
+  background: #f8f8f8;
+  border-radius: 0.25em;
+}
+
+.sneakers-card--name {
+  font-size: 16px;
 }
