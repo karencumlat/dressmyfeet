@@ -1,4 +1,4 @@
-![Dress My Feet]('https://github.com/karencumlat/dressmyfeet//public/images/dressmyfeet.svg)
+![Dress My Feet]('https://github.com/karencumlat/dressmyfeet/public/images/dressmyfeet.svg)
 
 # Dress My Feet
 
