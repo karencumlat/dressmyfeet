@@ -1,14 +1,14 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./App.css";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './App.css';
 
-import "./helpers/fontawesome";
-import { sneakers } from "./helpers/data";
+import './helpers/fontawesome';
+import { sneakers } from './helpers/data';
 
 function App() {
   const [dressShoes, setDressShoes] = React.useState(0);
-  const [dressFeet, setDressFeet] = React.useState("");
-  const [sneakersName, setSneakerName] = React.useState("");
+  const [dressFeet, setDressFeet] = React.useState('');
+  const [sneakersName, setSneakerName] = React.useState('');
 
   React.useEffect(() => {
     const dressFeetUrl = `/images/${sneakers[dressShoes].tag}.svg`;
@@ -44,17 +44,19 @@ function App() {
           <button
             onClick={prevSneakers}
             className="primary-btn sneakers-feature--btn"
+            aria-label="Previous"
           >
             <FontAwesomeIcon icon="chevron-left" size="4x" />
           </button>
           <img
-            src={process.env.PUBLIC_URL + "/images/leg.svg"}
+            src={process.env.PUBLIC_URL + '/images/leg.svg'}
             alt="Leg with sock"
             className="sneakers-feature--leg"
           />
           <button
             onClick={nextSneakers}
             className="primary-btn sneakers-feature--btn"
+            aria-label="Next"
           >
             <FontAwesomeIcon icon="chevron-right" size="4x" />
           </button>
@@ -67,7 +69,7 @@ function App() {
         />
         <h2 className="sneakers-feature--name">{sneakersName}</h2>
         <h2 className="sneakers-default-font credit">
-          Dress My Feet <br /> a{" "}
+          Dress My Feet <br /> a{' '}
           <a href="https://karencumlat.ca">Karen Cumlat</a> project
         </h2>
       </section>
