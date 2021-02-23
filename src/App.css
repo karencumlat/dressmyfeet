@@ -20,6 +20,7 @@ body {
   appearance: none;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .sneakers-feature {
@@ -84,7 +85,7 @@ body {
   background: none;
   border: none;
   color: #262521;
-  padding: 1em;
+  cursor: pointer;
 }
 
 .sneakers-card--button:hover {
@@ -101,7 +102,24 @@ h2 > a {
 }
 
 .credit {
+  color: #f8f8f8;
   bottom: 0;
   position: fixed;
   text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+  .sneakers-feature {
+    position: static;
+    width: 100%;
+  }
+
+  .sneakers-feature img {
+    flex: 3;
+  }
+
+  .sneakers-gallery {
+    position: static;
+    width: 100%;
+  }
 }
