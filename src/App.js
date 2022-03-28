@@ -70,7 +70,7 @@ function App() {
         <h2 className="sneakers-feature--name">{sneakersName}</h2>
         <h2 className="sneakers-default-font credit">
           Dress My Feet <br /> a{' '}
-          <a href="https://karencumlat.ca">Karen Cumlat</a> project
+          <a href="https://karencumlat.com">Karen Cumlat</a> project
         </h2>
       </section>
 

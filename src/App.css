@@ -101,6 +101,10 @@ h2 > a {
   border-bottom: 1px dotted;
 }
 
+h2 > a:hover {
+  color: #fffd4c;
+}
+
 .credit {
   color: #f8f8f8;
   bottom: 0;
